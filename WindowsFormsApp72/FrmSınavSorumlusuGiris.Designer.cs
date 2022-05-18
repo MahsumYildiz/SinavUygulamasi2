@@ -32,13 +32,13 @@ namespace WindowsFormsApp72
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSınavSorumlusuGiris));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnGeri = new System.Windows.Forms.Button();
             this.Btn_Giris = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.txtSifre2 = new System.Windows.Forms.TextBox();
             this.txtKadi2 = new System.Windows.Forms.TextBox();
             this.Lbl_Sifre2 = new System.Windows.Forms.Label();
             this.Lbl_Kadi2 = new System.Windows.Forms.Label();
+            this.BtnGeri = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,17 +56,6 @@ namespace WindowsFormsApp72
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sınav Sorumlusu Girişi";
-            // 
-            // BtnGeri
-            // 
-            this.BtnGeri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGeri.BackgroundImage")));
-            this.BtnGeri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnGeri.Location = new System.Drawing.Point(25, 47);
-            this.BtnGeri.Name = "BtnGeri";
-            this.BtnGeri.Size = new System.Drawing.Size(54, 44);
-            this.BtnGeri.TabIndex = 7;
-            this.BtnGeri.UseVisualStyleBackColor = true;
-            this.BtnGeri.Click += new System.EventHandler(this.button1_Click);
             // 
             // Btn_Giris
             // 
@@ -125,6 +114,17 @@ namespace WindowsFormsApp72
             this.Lbl_Kadi2.TabIndex = 0;
             this.Lbl_Kadi2.Text = "Kullanıcı Adı";
             // 
+            // BtnGeri
+            // 
+            this.BtnGeri.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnGeri.BackgroundImage")));
+            this.BtnGeri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGeri.Location = new System.Drawing.Point(25, 47);
+            this.BtnGeri.Name = "BtnGeri";
+            this.BtnGeri.Size = new System.Drawing.Size(54, 44);
+            this.BtnGeri.TabIndex = 7;
+            this.BtnGeri.UseVisualStyleBackColor = true;
+            this.BtnGeri.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmSınavSorumlusuGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +134,7 @@ namespace WindowsFormsApp72
             this.Controls.Add(this.BtnGeri);
             this.Controls.Add(this.groupBox2);
             this.Name = "FrmSınavSorumlusuGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SınavSorumlusu";
             this.Load += new System.EventHandler(this.FrmSınavSorumlusuGiris_Load);
             this.groupBox2.ResumeLayout(false);
