@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F35DDC03-29F3-4C74-9E46-C011E8961C69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp72</RootNamespace>
+    <AssemblyName>WindowsFormsApp72</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.Designer.cs">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifremiunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifremiunuttum.Designer.cs">
+      <DependentUpon>FrmSifremiunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKayıt.Designer.cs">
+      <DependentUpon>FrmKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciGiris.Designer.cs">
+      <DependentUpon>FrmOgrenciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSinav.Designer.cs">
+      <DependentUpon>FrmSinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmSoruHazırlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSoruHazırlama.Designer.cs">
+      <DependentUpon>FrmSoruHazırlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSınavBaslat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSınavBaslat.Designer.cs">
+      <DependentUpon>FrmSınavBaslat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSınavSorumlusuGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSınavSorumlusuGiris.Designer.cs">
+      <DependentUpon>FrmSınavSorumlusuGiris.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaSayfa.resx">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKayıt.resx">
+      <DependentUpon>FrmKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciGiris.resx">
+      <DependentUpon>FrmOgrenciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSinav.resx">
+      <DependentUpon>FrmSinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmSifremiunuttum.resx">
+      <DependentUpon>FrmSifremiunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSoruHazırlama.resx">
+      <DependentUpon>FrmSoruHazırlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSınavBaslat.resx">
+      <DependentUpon>FrmSınavBaslat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSınavSorumlusuGiris.resx">
+      <DependentUpon>FrmSınavSorumlusuGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
